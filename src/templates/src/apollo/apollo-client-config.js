@@ -10,7 +10,9 @@ export default function (/* { app, router, store, ssrContext, urlPath, redirect 
         // `GRAPHQL_URI=https://dev.example.com/graphql quasar dev`
         uri: process.env.GRAPHQL_URI || '<%= prompts.graphql_uri %>'
       },
-
+      wsLinkConfigConfig: {
+        // uri: 'ws://localhost:8000/api/ws/'
+      },
       // 'apollo-cache-inmemory' config
       // https://www.apollographql.com/docs/react/caching/cache-configuration/#configuring-the-cache
       cacheConfig: {},
